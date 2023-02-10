@@ -4,6 +4,7 @@ from werkzeug.exceptions import abort
 
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'abcd3fg7Bced'
 
 def get_db_connection():
     conn = sqlite3.connect('database.db')
